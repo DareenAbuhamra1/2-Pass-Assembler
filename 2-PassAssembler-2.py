@@ -230,50 +230,5 @@ def pass_two(intermediate_file, object_file, symtab, optab, start_add, program_l
 # In[19]:
 
 
-symbolTable,intermediateLines,startAddress,programLength = pass_one('sum.txt','sum_inter.txt')
-objectProgram = pass_two('sum_inter.txt','sum_obj.txt',symbolTable,OPTAB,startAddress,programLength)
-
-
-# In[20]:
-
-
-print('-'*115)
-print('Symbol table')
-for key,value in symbolTable.items():
-    print(key,value)
-print('-'*115)
-
-
-# In[21]:
-
-
-print("Intermediate Lines:")
-for line in intermediateLines:
-    print(line)
-print('-'*115)
-
-
-# In[22]:
-
-
-print("Starting address:",startAddress)
-
-
-# In[23]:
-
-
-print("Program length:",programLength)
-
-
-# In[24]:
-
-
-for line in objectProgram:
-    print(line)
-
-
-# In[ ]:
-
-
-
-
+symbol_table,intermediate_lines,start_address,program_length = pass_one('copy.txt','copy_inter.txt')
+object_program = pass_two('copy_inter.txt','copy_obj.txt',symbol_table,OPTAB,start_address,program_length)
