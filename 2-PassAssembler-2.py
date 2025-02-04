@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 #initialize opcode_table
 OPTAB = {
@@ -11,9 +6,6 @@ OPTAB = {
     'RSUB':'4C','STA':'0C','STCH':'54','STL':'14',
     'TD':'E0','TIX':'2C','WD':'DC','RD':'D8','JLT':'38','STX':'10',
 }
-
-
-# In[17]:
 
 
 def pass_one(source_file, intermediate_file):
@@ -104,7 +96,6 @@ def pass_one(source_file, intermediate_file):
     return symtab, inter_lines, format(start_add, 'X'), format(program_len, 'X')
 
 
-# In[18]:
 
 
 def pass_two(intermediate_file, object_file, symtab, optab, start_add, program_len):
@@ -227,7 +218,7 @@ def pass_two(intermediate_file, object_file, symtab, optab, start_add, program_l
     return object_program 
 
 
-# In[19]:
+
 
 
 symbol_table,intermediate_lines,start_address,program_length = pass_one('copy.txt','copy_inter.txt')
