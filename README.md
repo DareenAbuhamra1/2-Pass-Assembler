@@ -13,8 +13,8 @@ My code works with three files:
   3) "copy_obj.txt" which is the final result of Pass 2, The object code made by Pass 2 is written in this file.
 
 Data Structures used in the code:
-  1) Dictionaries: OPTAB and SYMTAB
-  2) Lists: intermediate lines in Pass 1, text records and object program in Pass 2
+  1) Dictionaries: OPTAB and SYMTAB.
+  2) Lists: intermediate lines in Pass 1, text records and object program in Pass 2.
 
 * OPTAB is used to lookup mnemonic operation codes and translate them to their machine language equivalents.
 * During Pass 1, OPTAB is used to look up and validate operation codes in the source program. In Pass 2, it is used to translate the operation codes to machine language.
@@ -23,7 +23,8 @@ Data Structures used in the code:
 Pass 1 function (define symbols):
   1) Assign addresses to all statements in the program.
   2) Save the values (addresses) assigned to all labels for use in Pass 2.
-  3) Perform some processing of assembler directives. (This includes processing that affects address assignment, such as determining the length of         data areas defined by BYTE, RESW, etc.)
+  3) Perform some processing of assembler directives. (This includes processing that affects address assignment, such as determining the length of data areas defined by BYTE, RESW, etc.)
+  4) Write the intermediate file.
 
 Pass 2 function (assemble instructions and generate object program):
   1) Assemble instructions (translating operation codes and looking up addresses).
