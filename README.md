@@ -49,10 +49,10 @@ The object program:
   End record:
     Col. 1        E
     Col. 2-7      Address of first executable instruction in object program (hexadecimal)
-
+</pre>
   For better readability, The symbol ^ is used to separate fields.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-REFERENCE
+REFERENCE:
 System Software An Introduction To Systems Programming by Leland L. Beck
-</pre>
+
